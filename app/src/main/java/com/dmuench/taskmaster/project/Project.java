@@ -13,18 +13,25 @@ public class Project {
     public long id;
     public String title;
     public String description;
-    public List<Tasks> tasks;
 
     public Project() {
     }
 
-    public Project(String title, String description, List<Tasks> tasks) {
+    public Project(String title, String description) {
         this.title = title;
         this.description = description;
-        this.tasks = tasks;
     }
+
+    public String getProjectTitle () {
+        return this.title;
+    }
+
+    public String getProjectDescription () {
+        return this.description;
+    }
+
     public String toString() {
-        return this.title + " | " + this.description + " | " + this.tasks + ", ";
+        return this.title + " | " + this.description;
     }
 }
 
