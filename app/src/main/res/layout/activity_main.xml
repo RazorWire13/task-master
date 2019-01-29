@@ -7,43 +7,44 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnMyProjects"
-        android:layout_width="wrap_content"
-        android:layout_height="79dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginEnd="32dp"
-        android:text="My Projects"
+        android:id="@+id/btnAddNewProject"
+        android:layout_width="283dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onClickAddProject"
+        android:text="Add New Project"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewMainTitle" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/project_recycler_view" />
 
     <TextView
-        android:id="@+id/viewMainTitle"
+        android:id="@+id/viewProjectList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:text="TaskMaster"
+        android:text="Project Listing"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="45dp" />
+        tools:layout_editor_absoluteY="59dp" />
 
-    <Button
-        android:id="@+id/btnCreateProject"
-        android:layout_width="143dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="420dp"
-        android:layout_marginEnd="44dp"
-        android:text="Create New Project"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/btnMyProjects"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/project_recycler_view"
+        android:layout_width="375dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewMainTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/viewProjectList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
