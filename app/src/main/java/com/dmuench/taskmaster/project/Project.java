@@ -10,7 +10,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Project {
     @PrimaryKey(autoGenerate = true)
-    public long id;
+    public long projectId;
     public String title;
     public String description;
 

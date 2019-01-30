@@ -9,10 +9,12 @@ import android.widget.TextView;
 
 import com.dmuench.taskmaster.project.Project;
 import com.dmuench.taskmaster.project.ProjectDatabase;
+import com.dmuench.taskmaster.tasks.TaskDatabase;
 
 public class ProjectActivity extends AppCompatActivity {
 
     ProjectDatabase projectDb;
+    TaskDatabase taskDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class ProjectActivity extends AppCompatActivity {
         setContentView(R.layout.activity_project);
 
         projectDb = Room.databaseBuilder(getApplicationContext(), ProjectDatabase.class, "projects").allowMainThreadQueries().build();
+        taskDb = Room.databaseBuilder(getApplicationContext(), TaskDatabase.class, "tasks").allowMainThreadQueries().build();
     }
 
     public void onClickCreateProject (View v) {
@@ -37,6 +40,10 @@ public class ProjectActivity extends AppCompatActivity {
 
         // return to MainActivity
         finish();
+    }
+
+    public void onClickCreateTask (View v) {
+        
     }
 
 }

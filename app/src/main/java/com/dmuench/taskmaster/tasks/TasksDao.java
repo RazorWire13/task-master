@@ -11,24 +11,23 @@ import java.util.List;
 @Dao
 public interface TasksDao {
 
-    @Query("SELECT * FROM Project WHERE id = :id")
-    Tasks getTasks (long id);
+    @Query("SELECT * FROM Tasks WHERE taskId = :taskId")
+    Tasks getTask (long taskId);
 
-    @Query("SELECT * FROM Project")
+    @Query("SELECT * FROM Tasks WHERE projectId = :projectId")
+    List<Tasks> getTasksByProject (long projectId);
+
+    @Query("SELECT * FROM Tasks")
     List<Tasks> getAll();
 
-    //Resourced from: https://stackoverflow.com/questions/5191503/how-to-select-the-last-record-of-a-table-in-sql
-    @Query("SELECT * FROM Project ORDER BY id DESC LIMIT 1")
-    Tasks getLast();
-
     @Insert
-    void addProject (Tasks task);
+    void addTask (Tasks task);
 
     @Update
-    void updateProject (Tasks task);
+    void updateTask (Tasks task);
 
     @Delete
-    void deleteProject (Tasks task);
+    void deleteTask (Tasks task);
 }
 
 
