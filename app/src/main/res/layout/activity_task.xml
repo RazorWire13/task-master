@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProjectActivity">
+    tools:context=".TaskActivity">
 
     <TextView
-        android:id="@+id/viewCreateProject"
+        android:id="@+id/viewCreateTask"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
-        android:text="Create a Project"
+        android:text="Create a Task"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,35 +22,36 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/viewProjectDescription"
+        android:id="@+id/viewTaskDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
-        android:text="Project Description"
+        android:text="Task Title"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/project_title_input" />
+        app:layout_constraintTop_toBottomOf="@+id/viewCreateTask" />
 
     <EditText
-        android:id="@+id/project_title_input"
+        android:id="@+id/task_title_input"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewProjectTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/viewTaskTitle" />
 
     <EditText
-        android:id="@+id/project_description_input"
+        android:id="@+id/task_description_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -61,36 +62,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewProjectDescription" />
+        app:layout_constraintTop_toBottomOf="@+id/viewTaskDescription" />
 
     <Button
-        android:id="@+id/btnCreateProject"
+        android:id="@+id/btnCreateTask"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="88dp"
         android:layout_marginEnd="8dp"
-        android:onClick="onClickCreateProject"
-        android:text="Create Project"
+        android:onClick="onClickCreateTask"
+        android:text="Create Task"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/project_description_input" />
+        app:layout_constraintTop_toBottomOf="@+id/task_title_input" />
 
     <TextView
-        android:id="@+id/viewProjectTitle"
+        android:id="@+id/viewTaskTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="68dp"
         android:layout_marginEnd="8dp"
-        android:text="Project Title"
+        android:text="Task Description"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewCreateProject" />
+        app:layout_constraintTop_toBottomOf="@+id/task_description_input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

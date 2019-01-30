@@ -17,14 +17,18 @@ Task Master performs the following activities:
   * `Accepted` - the assignee has accepted that task
   * `Finished` - the task is totally complete. Write tests making sure a task progresses through it’s states properly
 
-  #### Firebase
+#### Firebase
 * Users should be able to log in.
 * At a minimum, they should be able to log in with email and password.
 * Users should be able to see all the Projects in a cloud database, and add Tasks to those projects.
-
   * (Hint: In a NoSQL database, there are many options for how to store Tasks associated with Projects and Users. Read the Firebase documentation on structuring data carefully, and have fun exploring!)
 * A user should be able to “Assign” a task to themself or another user.
 * The user assigned to a task should be able to “Accept” that task, and later “Complete” that task.
+
+#### Firebase Cloud Functions
+* Users should be able to view all of the tasks assigned to them on a screen.
+* Users should be able to sort the tasks assigned to them based on the title of the task, the state the task is in, or the person who assigned the task to them
+* This sorting should be done in the cloud, to avoid using too many resources on the user’s phone.
 
 ## Change Log
 #### 1/28/2019
@@ -34,6 +38,9 @@ Task Master performs the following activities:
 
 #### 1/29/2019
 - Achieved basic functionality to add a project and view in recycler on MainActivity.
+
+#### 1/30/2019
+-
 
 ## Activity Screenshots
 #### Main Activity
@@ -47,9 +54,12 @@ Task Master performs the following activities:
 </p>
 
 ## Resources
-* Code review Day 41 pt 1 informed project creation
-
+* Code review Day 41 pt 1 (project creation)
+* [Room Relationships](https://android.jlelse.eu/android-architecture-components-room-relationships-bf473510c14a)
+* [Firebase Setup](https://firebase.google.com/docs/android/setup)
+* [Enums](https://stackoverflow.com/questions/44498616/android-architecture-components-using-enums)
 
 ## Helpful Human Collaborators
 * Special thanks to Team Alpha Table (Jessica Lovell, Evan Slaton, Jeff Borda, Dan Logerstedt and Zahra Mohamed) for always being willing to help a guy out when needed with direction and correction.
+* Sooz demands literary excellence - I shall deliver!
 

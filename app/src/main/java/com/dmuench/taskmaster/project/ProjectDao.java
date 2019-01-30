@@ -11,14 +11,14 @@ import java.util.List;
 @Dao
 public interface ProjectDao {
 
-    @Query("SELECT * FROM Project WHERE id = :id")
+    @Query("SELECT * FROM Project WHERE projectId = :id")
     Project getProject (long id);
 
     @Query("SELECT * FROM Project")
     List<Project> getAll();
 
     //Resourced from: https://stackoverflow.com/questions/5191503/how-to-select-the-last-record-of-a-table-in-sql
-    @Query("SELECT * FROM Project ORDER BY id DESC LIMIT 1")
+    @Query("SELECT * FROM Project ORDER BY projectId DESC LIMIT 1")
     Project getLast();
 
     @Insert
