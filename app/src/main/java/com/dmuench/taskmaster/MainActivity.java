@@ -33,16 +33,10 @@ public class  MainActivity extends AppCompatActivity {
     private List<Project> projects;
     private static String TAG ="MainActivity";
 
-    ProjectDatabase projectDb;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        projectDb = Room.databaseBuilder(getApplicationContext(), ProjectDatabase.class, "projects").allowMainThreadQueries().build();
-
-        projects = projectDb.projectDao().getAll();
 
         projectList = findViewById(R.id.project_recycler_view);
 
@@ -53,15 +47,6 @@ public class  MainActivity extends AppCompatActivity {
 
         projectAdapter = new ProjectAdapter(projects);
         projectList.setAdapter(projectAdapter);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Log.d(TAG, "onActivityResult is called");
-
-        // get data from projectDb
-        projects = projectDb.projectDao().getAll();
-        projectAdapter.setProjectDataset(projects);
     }
 
     public void onClickAddProject (View v) {
