@@ -8,10 +8,10 @@
 
     <Button
         android:id="@+id/btnAddNewProject"
-        android:layout_width="283dp"
+        android:layout_width="285dp"
         android:layout_height="69dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:onClick="onClickAddProject"
         android:text="Add New Project"
@@ -38,7 +38,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/project_recycler_view"
         android:layout_width="375dp"
-        android:layout_height="420dp"
+        android:layout_height="398dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -46,5 +46,19 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewProjectList" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="onLoginButtonPress"
+        android:text="Login"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNewProject" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

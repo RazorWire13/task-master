@@ -1,9 +1,5 @@
 package com.dmuench.taskmaster.project;
 
-import com.dmuench.taskmaster.tasks.Tasks;
-
-import java.util.List;
-
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 

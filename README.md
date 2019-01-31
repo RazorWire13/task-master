@@ -30,6 +30,11 @@ Task Master performs the following activities:
 * Users should be able to sort the tasks assigned to them based on the title of the task, the state the task is in, or the person who assigned the task to them
 * This sorting should be done in the cloud, to avoid using too many resources on the user’s phone.
 
+#### TaskMaster Accessibility Features
+* Any iconography in your app should be well-labeled with a contentDescription.
+* Use the hint attribute on all editable elements in your app, or labelFor to allow a TextView to serve as a label.
+* Use the focusable attribute to show that a particular ViewGroup consists of one piece of data.
+
 ## Change Log
 #### 1/28/2019
 - Initialized repo
@@ -39,8 +44,8 @@ Task Master performs the following activities:
 #### 1/29/2019
 - Achieved basic functionality to add a project and view in recycler on MainActivity.
 
-#### 1/30/2019
--
+#### 1/31/2019
+- Instantiated Firebase account and completed dependencies additions
 
 ## Activity Screenshots
 #### Main Activity

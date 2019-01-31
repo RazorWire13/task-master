@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "248235793639",
+    "firebase_url": "https://taskmaster-43d48.firebaseio.com",
+    "project_id": "taskmaster-43d48",
+    "storage_bucket": "taskmaster-43d48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248235793639:android:a05feaa793603890",
+        "android_client_info": {
+          "package_name": "com.dmuench.taskmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248235793639-c19mvimcpnhceb3eiffdr7jie4a1vau5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9AKH-jUpJ6gJXCDX072RpVyPQ9Db7JSE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
