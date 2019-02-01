@@ -35,6 +35,10 @@ Task Master performs the following activities:
 * Use the hint attribute on all editable elements in your app, or labelFor to allow a TextView to serve as a label.
 * Use the focusable attribute to show that a particular ViewGroup consists of one piece of data.
 
+#### Polish TaskMaster / Build an APK
+* Complete all feature tasks from the last 4 labs.
+* Build an .apk file that can be directly installed on a device. Include that file in your repo, linked from your README.
+
 ## Change Log
 #### 1/28/2019
 - Initialized repo
@@ -46,6 +50,9 @@ Task Master performs the following activities:
 
 #### 1/31/2019
 - Instantiated Firebase account and completed dependencies additions
+
+#### 2/1/2019
+-
 
 ## Activity Screenshots
 #### Main Activity
