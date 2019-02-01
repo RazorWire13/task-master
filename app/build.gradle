@@ -74,8 +74,8 @@ dependencies {
     // Firebase Login UI Auth
     implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
 
-    // https://mvnrepository.com/artifact/com.google.android.gms/play-services-basement
-
+    // Firebase Firestore
+    implementation 'com.google.firebase:firebase-firestore:18.0.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

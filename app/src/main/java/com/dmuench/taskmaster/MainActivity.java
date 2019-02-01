@@ -3,22 +3,19 @@ package com.dmuench.taskmaster;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 import com.dmuench.taskmaster.project.Project;
 import com.dmuench.taskmaster.project.ProjectAdapter;
-import com.dmuench.taskmaster.project.ProjectDatabase;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -50,7 +47,7 @@ public class  MainActivity extends AppCompatActivity {
     }
 
     public void onClickAddProject (View v) {
-        Intent addProject = new Intent(this, ProjectActivity.class);
+        Intent addProject = new Intent(this, CreateProjectActivity.class);
         startActivityForResult(addProject, 1313);
     }
 
@@ -79,6 +76,8 @@ public class  MainActivity extends AppCompatActivity {
                 if (resultCode == RESULT_OK) {
                     // Successfully signed in
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                    TextView viewProjectList = findViewById(R.id.viewProjectList);
+                    viewProjectList.setText(user.getDisplayName() + " Project List");
                     // ...
                 } else {
                     // Sign in failed. If response is null the user canceled the
